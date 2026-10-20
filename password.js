@@ -1,4 +1,4 @@
-import { db, membership } from './auth.js';
+import { db, membership } from './auth.js?v=20261020-isolated-key2';
 import { passwordAccess, savePassword, passwordProblem } from './password-core.js';
 
 const form=document.getElementById('password-form'),status=document.getElementById('status'),button=document.getElementById('save'),recovery=document.getElementById('recovery');

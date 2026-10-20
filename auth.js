@@ -1,5 +1,5 @@
 import { createClient } from 'https://esm.sh/@supabase/supabase-js@2.45.0';
-export const db = createClient('https://fbunxgjlldxvnrjoruwk.supabase.co', 'sb_publishable_ltaNA7nnVozoSCOcZIjg', {
+export const db = createClient('https://fbunxgjlldxvnrjoruwk.supabase.co', 'sb_publishable_Vp_iJjWdNwyQ-OmMrU0NAw_Ed0QAQnw', {
  auth: { storageKey:'sb-inky-duck-isolated-auth', persistSession:true, autoRefreshToken:true, detectSessionInUrl:location.pathname.endsWith('/password.html') }
 });
 export async function membership() {
