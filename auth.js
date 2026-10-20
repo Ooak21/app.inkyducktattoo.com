@@ -1,6 +1,6 @@
 import { createClient } from 'https://esm.sh/@supabase/supabase-js@2.45.0';
-export const db = createClient('https://jtifhcvbgxqwlywugvjv.supabase.co', 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Imp0aWZoY3ZiZ3hxd2x5d3Vndmp2Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3NzI1MDc5NTgsImV4cCI6MjA4ODA4Mzk1OH0.UfRVLuvM8_HPvKXUEDXb0cxR50znv16L5Tf99AnSc7g', {
- auth: { storageKey:'sb-inky-duck-auth', persistSession:true, autoRefreshToken:true, detectSessionInUrl:location.pathname.endsWith('/password.html') }
+export const db = createClient('https://fbunxgjlldxvnrjoruwk.supabase.co', 'sb_publishable_ltaNA7nnVozoSCOcZIjg', {
+ auth: { storageKey:'sb-inky-duck-isolated-auth', persistSession:true, autoRefreshToken:true, detectSessionInUrl:location.pathname.endsWith('/password.html') }
 });
 export async function membership() {
  const {data:{user},error}=await db.auth.getUser();
